@@ -1,5 +1,18 @@
 # React + Vite
 
+Vite is essentially a modern frontend build tool that is designed to be super fast and developer-friendly, especially for frameworks like React, Vue, and Svelte.
+
+Vite (pronounced like “veet”) is not a bundler like Webpack, though it does bundle for production.
+
+Think of it as a development and build tool that replaces older tools like Webpack or Create React App (CRA).
+
+```
+npm create vite@latest my-app      # Scaffold a new app
+npm install                        # Install dependencies
+npm run dev                         # Run dev server with HMR
+npm run build                       # Build for production (output in dist/)
+npm run preview                     # Preview production build locally
+```
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
@@ -25,6 +38,8 @@ import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql } from '@apo
 ```
 
 npm run dev starts at http://localhost:5173/
+
+💡 Tip: For React + Vite apps, Static Site deployment is simpler than Web Service, unless you need server-side logic.
 
 ## React Compiler
 
