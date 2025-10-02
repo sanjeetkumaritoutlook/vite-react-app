@@ -45,6 +45,36 @@ Run locally( for render): npm install serve --save-dev
 
 After this, your devDependencies will include serve, and Render will be able to run:
 
+## graphQL vs REST
+REST: Every resource usually has its own URL/endpoint. For example:
+```
+GET /users
+GET /users/123
+POST /users
+```
+GraphQL: Typically a single endpoint handles all queries and mutations, for example:
+```
+POST https://myapi.com/graphql
+```
+Everything—fetching users, posts, comments, etc.—goes through this one URL. You differentiate what you want via the GraphQL query/mutation in the request body:
+
+```
+{
+  "query": "{ users { id name email } }"
+}
+```
+or
+```
+const GET_COUNTRIES = gql`
+  query {
+    countries {
+      code
+      name
+      emoji
+    }
+  }
+`;
+```
 ## React Compiler
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
