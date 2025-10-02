@@ -41,6 +41,10 @@ npm run dev starts at http://localhost:5173/
 
 💡 Tip: For React + Vite apps, Static Site deployment is simpler than Web Service, unless you need server-side logic.
 
+Run locally( for render): npm install serve --save-dev
+
+After this, your devDependencies will include serve, and Render will be able to run:
+
 ## React Compiler
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
